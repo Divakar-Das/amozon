@@ -42,7 +42,7 @@ const Landing = () => {
                     <CustomGridTable container spacing={3} >
                         {allproduct.map((item, index) => {
                             const firstProduct = item.product?.[0];
-                            const imgUrl = firstProduct.fileBaseUrl.replace("http://api-ecommerce-app.bluetickcoders.com/","/api") + firstProduct.productImages?.[0].productImagePath;
+                            const imgUrl = firstProduct.fileBaseUrl.replace("http://api-ecommerce-app.bluetickcoders.com","/api") + firstProduct.productImages?.[0].productImagePath;
 
                             return (
                                 <Grid key={index} size={{ xs: 4, lg: 3, sm: 8, md: 4 }}>
