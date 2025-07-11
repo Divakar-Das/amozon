@@ -248,9 +248,9 @@ const Header = () => {
 
   return (
     <>
-      <DisclaimerTag>
+      {/* <DisclaimerTag>
         <Typography variant='p'>This app is only used for testing purpose</Typography>
-      </DisclaimerTag>
+      </DisclaimerTag> */}
 
       <CustomHeader position='static'>
 
