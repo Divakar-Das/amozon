@@ -72,7 +72,7 @@ const Landing = () => {
                         }} >
                             {allproduct.map((item, index) => {
                                 const firstProduct = item.product?.[0];
-                                const imgUrl = firstProduct.fileBaseUrl + firstProduct.productImages[0]?.productImagePath;
+                                const imgUrl = firstProduct.fileBaseUrl.replace("http://api-ecommerce-app.bluetickcoders.com","/api") + firstProduct.productImages[0]?.productImagePath;
 
                                 const productName = firstProduct.product?.[0].name;
 
