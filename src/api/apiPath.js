@@ -1,0 +1,7 @@
+export const subCatory = "/subCategories"
+export const register = "/register"
+export const getCategoriesWithSub = "/getCategoriesWithSub"
+export const category = "/category"
+export const getProducts ="/getProducts"
+export const product="/product"
+export const landing="/landing"
