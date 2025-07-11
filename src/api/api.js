@@ -4,7 +4,7 @@ import { hideLoading, showLoading } from "../components/store/loadingSlice";
 import store from "../components/store/store";
 
 const FetchApi = axios.create({
-    baseURL: "http://api-ecommerce-app.bluetickcoders.com"
+    baseURL: "/api"
 })
 
 
