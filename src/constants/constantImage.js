@@ -1,6 +1,6 @@
-import logo from "src/assets/EcommerceLoginAsset.png"
-import headerLogo from "src/assets/EcommerceLogin2.png"
-import errorImage from "src/assets/pageNotFound!.png";
+import logo from "../assets/EcommerceLoginAsset.png"
+import headerLogo from "../assets/EcommerceLogin2.png"
+import errorImage from "../assets/pageNotFound!.png";
 const imageUrl = logo
 export default imageUrl;
 
