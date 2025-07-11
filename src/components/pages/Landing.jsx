@@ -24,7 +24,7 @@ const Landing = () => {
                 const bannerImage = await GetRequest(BannerImg);
                 const Items = await GetRequest(landing);
                 setAllProduct(Items)
-                setImage(bannerImage?.[4]?.bannerImagePath)
+                setImage(bannerImage?.[4]?.bannerImagePath.replace("http://api-ecommerce-app.bluetickcoders.com","/api"))
             } catch (error) {
                 console.log(error);
             }
