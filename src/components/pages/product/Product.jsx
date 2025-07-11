@@ -75,7 +75,7 @@ const Product = () => {
 
             <ProductCardContainer direction={"column"} >
                 {categories.map((item, index) => {
-                    const imgUrl = item.fileBaseUrl + item.productImages?.[0].productImagePath;
+                    const imgUrl = item.fileBaseUrl.replace("http://api-ecommerce-app.bluetickcoders.com","/api") + item.productImages?.[0].productImagePath;
                     return (
                         <CustomProductCard key={index} >
                             <CustomProductImage>

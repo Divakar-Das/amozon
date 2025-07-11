@@ -53,7 +53,7 @@ const ViewProductDetails = () => {
     //     }
     // }, [productDetail.about])
 
-    const imgUrl = productDetail.productImages?.[0].productImagePath;
+    const imgUrl = productDetail.productImages?.[0].productImagePath.replace("http://api-ecommerce-app.bluetickcoders.com","/api");
 
 
     const [expanded, setExpanded] = useState(false);

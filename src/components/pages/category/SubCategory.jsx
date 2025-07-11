@@ -37,7 +37,7 @@ const SubCategory = () => {
                     {subItems.map((item, index) => (
                         <ProductBox key={index}>
                             <ProductCard onClick={()=>navigate(`/product?subCategoryId=${item.id}`)} >
-                                <ProductImage src={item.product[0].productImages[0].productImagePath} alt="" />
+                                <ProductImage src={item.product[0].productImages[0].productImagePath.replace("http://api-ecommerce-app.bluetickcoders.com","/api")} alt="" />
                             </ProductCard>
                             <ProductTitle variant='p' component={"div"}>{item.name}
                             </ProductTitle>

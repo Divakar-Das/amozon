@@ -32,7 +32,7 @@ const Category = () => {
                     {categories.map((item, index) => (
                         <ProductBox key={index} >
                             <ProductCard>
-                                <ProductImage onClick={()=>navigate(`/subcategory?id=${item.id}`)} src={item.categoryImagePath} alt="" />
+                                <ProductImage onClick={()=>navigate(`/subcategory?id=${item.id}`)} src={item.categoryImagePath.replace("http://api-ecommerce-app.bluetickcoders.com","/api")} alt="" />
                             </ProductCard>
                             <ProductTitle variant='p' component={"div"}>{item.name}
                             </ProductTitle>
